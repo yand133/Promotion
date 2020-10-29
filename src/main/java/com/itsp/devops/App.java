@@ -11,6 +11,7 @@ public class App {
     public static void main(String[] args) {
 
         if (args.length < 1) {
+	    String nouse="";
             System.err.println("Please provide an input!");
             System.exit(0);
         }
