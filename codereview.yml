@@ -1,10 +1,10 @@
 version: 0.2
 env:
   secrets-manager:
-    LOGIN: sonorcloud:sonartoken
-    HOST: sonorcloud:HOST
-    Organization: sonorcloud:Organization
-    Project: sonorcloud:Project
+    LOGIN: 86c0dd294cfb679771085c79c6c4a46d170ba906
+    HOST: https://sonarclouod.io
+    Organization: ItspTest
+    Project: Yan cpu133
 phases:
   install:
     runtime-versions:
