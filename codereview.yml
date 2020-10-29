@@ -2,8 +2,8 @@ version: 0.2
 env:
     LOGIN: 86c0dd294cfb679771085c79c6c4a46d170ba906
     HOST: https://sonarclouod.io
-    Organization: ItspTest
-    Project: Yan
+    Organization: Yan
+    Project: ItspTest
 phases:
   install:
     runtime-versions:
