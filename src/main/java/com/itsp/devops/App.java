@@ -18,7 +18,7 @@ public class App {
 	    String nouse="";
 	    int  test=0;
 	    int  check=1;
-	    logger.info(check*test);
+	    logger.info(check/test);
             logger.warning("Please provide an input!");
             System.exit(0);
         }
