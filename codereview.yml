@@ -1,6 +1,5 @@
-version: 0.2
+eversion: 0.2
 env:
-//  secrets-manager:
     LOGIN: 86c0dd294cfb679771085c79c6c4a46d170ba906
     HOST: https://sonarclouod.io
     Organization: ItspTest
