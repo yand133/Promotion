@@ -5,8 +5,12 @@ package com.itsp.devops;
  *
  */
 import org.apache.commons.codec.digest.DigestUtils;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class App {
+
+    private static final Logger logger = Logger.getLogger(LoggerExample.class.getName());
 
     public static void main(String[] args) {
 
@@ -14,8 +18,8 @@ public class App {
 	    String nouse="";
 	    int  test=0;
 	    int  check=1;
-	    System.err.println(check*test);
-            System.err.println("Please provide an input!");
+	    logger.info(check*test);
+            logger.warning("Please provide an input!");
             System.exit(0);
         }
         System.out.println(sha256hex(args[0]));
