@@ -1,9 +1,9 @@
 version: 0.2
 env:
-    LOGIN: 86c0dd294cfb679771085c79c6c4a46d170ba906
-    HOST: https://sonarclouod.io
-    Organization: Yan
-    Project: ItspTest
+    LOGIN: "86c0dd294cfb679771085c79c6c4a46d170ba906"
+    HOST: "https://sonarclouod.io"
+    Organization: "Yan"
+    Project: "ItspTest"
 phases:
   install:
     runtime-versions:
@@ -21,6 +21,7 @@ phases:
   build:
     commands:
       - mvn test     
+      - echo
       - mvn sonar:sonar -Dsonar.login=$LOGIN -Dsonar.host.url=$HOST -Dsonar.projectKey=$Project -Dsonar.organization=$Organization
       - sleep 15
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
