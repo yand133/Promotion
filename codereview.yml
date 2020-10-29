@@ -22,7 +22,7 @@ phases:
     commands:
       - mvn test     
       - echo $LOGIN
-      - mvn sonar:sonar -Dsonar.login="86c0dd294cfb679771085c79c6c4a46d170ba906" -Dsonar.host.url="https://sonarclouod.io" -Dsonar.projectKey="ItspTest" -Dsonar.organization="Yan"
+      - mvn sonar:sonar -Dsonar.login="86c0dd294cfb679771085c79c6c4a46d170ba906" -Dsonar.host.url="https://sonarcloud.io" -Dsonar.projectKey="ItspTest" -Dsonar.organization="Yan"
       - sleep 15
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
