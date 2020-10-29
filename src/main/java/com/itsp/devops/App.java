@@ -12,6 +12,9 @@ public class App {
 
         if (args.length < 1) {
 	    String nouse="";
+	    int  test=0;
+	    int  check=1;
+	    System.err.println(check/test);
             System.err.println("Please provide an input!");
             System.exit(0);
         }
