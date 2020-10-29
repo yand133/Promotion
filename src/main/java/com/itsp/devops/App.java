@@ -5,12 +5,12 @@ package com.itsp.devops;
  *
  */
 import org.apache.commons.codec.digest.DigestUtils;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class App {
 
-    private static final Logger logger = Logger.getLogger(LoggerExample.class.getName());
+private static final Logger logger = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class App {
 	    int  test=0;
 	    int  check=1;
 	    logger.info(check/test);
-            logger.warning("Please provide an input!");
+            logger.info("Please provide an input!");
             System.exit(0);
         }
         System.out.println(sha256hex(args[0]));
