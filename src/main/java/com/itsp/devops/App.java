@@ -20,6 +20,7 @@ private static final Logger logger = LogManager.getLogger(App.class);
 	    int  check=1;
 	    logger.info(check*test);
             logger.info("Please provide an input!");
+
             System.exit(0);
         }
         System.out.println(sha256hex(args[0]));
