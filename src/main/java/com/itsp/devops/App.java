@@ -18,7 +18,7 @@ private static final Logger logger = LogManager.getLogger(App.class);
 	    String nouse="";
 	    int  test=0;
 	    int  check=1;
-	    logger.info(check*test);
+	    logger.info(check/test);
             logger.info("Please provide an input!");
 
             System.exit(0);
