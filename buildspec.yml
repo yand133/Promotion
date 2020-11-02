@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn clean package
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - git init
+      - git remote add origin https://yand133:ItsP123\!@github.com/yand133/Promotion.git
+      - git remote set-url origin https://yand133:ItsP123\!@github.com/yand133/Promotion.git
+      - git remote -v 
+      - git config --global user.name "yand133"
+      - git config --global user.email "yan.dong@itsp-inc.com"
+      - git add .
+      - git commit -m "commit after codeview"
+      - datename=$(date +%Y%m%d-%H%M%S)
+      - git branch codereview-$datename
+      - git push origin codereview-$datename
+artifacts:
+  files:
+    - target/itsp-1.0-SNAPSHOT.jar
